@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsRecyclerView"
+        android:layout_width="@dimen/value_0_dp"
+        android:layout_height="@dimen/value_0_dp"
+        android:layout_margin="@dimen/value_16_dp"
+        app:layout_constraintBottom_toTopOf="@+id/addEventButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <ImageButton
+        android:id="@+id/addEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add_event"
+        style="@style/CircleStyle"
+        app:layout_constraintBottom_toTopOf="@+id/bottomMenuLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomMenuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/value_12_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/menu_calendar"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ImageViewStyle"
+            android:src="@drawable/calendar_img" />
+
+        <ImageButton
+            android:id="@+id/menu_settings"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ImageViewStyle"
+            android:src="@drawable/settings_img"/>
+
+        <ImageButton
+            android:id="@+id/menu_friends"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ImageViewStyle"
+            android:src="@drawable/person_img"/>
+
+        <ImageButton
+            android:id="@+id/menu_search"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ImageViewStyle"
+            android:src="@drawable/search_img"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

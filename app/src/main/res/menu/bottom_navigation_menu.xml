@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_calendar"
+        android:icon="@drawable/calendar_img"
+        android:title="@string/calendar" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings_img"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/menu_friends"
+        android:icon="@drawable/person_img"
+        android:title="@string/friends" />
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/search_img"
+        android:title="@string/search" />
+</menu>

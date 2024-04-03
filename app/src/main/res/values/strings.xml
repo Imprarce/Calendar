@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="calendar">Календарь</string>
+    <string name="settings">Настройки</string>
+    <string name="friends">Друзья</string>
+    <string name="search">Поиск</string>
+    <string name="create_event">Создать событие</string>
+    <string name="start">Начало</string>
+    <string name="end">Конец</string>
+    <string name="date">Дата</string>
+    <string name="type_event">Тип события</string>
+    <string name="name_event">Название события</string>
+    <string name="add_new_event">Добавить новое событие</string>
+    <string name="clear">Очистить</string>
+    <string name="melody">Мелодия</string>
+    <string name="language">Язык</string>
+    <string name="save">Сохранить</string>
+    <string name="close">Закрыть</string>
+    <string name="plug_text">Заглушка</string>
+</resources>
